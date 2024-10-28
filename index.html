@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="icon" type="image/png" href="./images/icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Memory Card Game</h1>
+    </header>
+    <div class="area">
+        <div id="difficulty-selection">
+            <button id="easy-mode">Easy</button>
+            <br>
+            <button id="hard-mode">Hard</button>
+        </div>
+
+        <div id="game-area" class="hidden">
+            <div id="score-board">
+                <p>Score: <span id="score">0</span></p> 
+            </div>
+            <div id="game-board" class="grid"></div>
+            <div id="game-info">
+                <p>Moves: <span id="move-count">0</span></p>
+                <p>Time: <span id="timer">0</span> seconds</p>
+                <button id="new-game">New Game</button>
+            </div>
+            <p id="congrats-message" class="hidden">Congratulations! You've completed the game!</p>
+        </div>  
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
